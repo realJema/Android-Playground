@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">playground</string>
+    <string name="find_beer">Find Beer</string>
+    <string name="brands">Brands</string>
+    <string name="send">Send Message</string>
+    <string name="chooser">Select option</string>
+    <string name="reset">Reset</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string-array name="beer_colors">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+        <item>grey</item>
+    </string-array>
+</resources>
