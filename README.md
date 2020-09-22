@@ -100,3 +100,20 @@ when your activity is about to be destroyed or finished
 Toast toast = Toast.makeText(this, text, duration);
 toast.show()
 ```
+## Fragments
+> Make it modular
+
+Fragments allow you to reuse code
+
+#### Lifecycle
+onAttach()
+onCreate()
+onCreateView()
+onActivityCreated()
+onStart()
+onResume()
+onPause()
+onStop()
+onDestroyView()
+onDestroy()
+onDetach()

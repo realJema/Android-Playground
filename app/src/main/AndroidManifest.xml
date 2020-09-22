@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Stopwatch"></activity>
+        <activity android:name=".Layouts1"></activity>
+        <activity android:name=".Stopwatch" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Intents" />
         <activity android:name=".ReceiveMessage" />
         <activity android:name=".spinner_button_display" />
-        <activity android:name=".Layouts1">
+        <activity android:name=".Fragments">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
