@@ -1,4 +1,8 @@
 # Android-Playground
+
+<details>
+<summary>Android Head First Book</summary>
+<br>
 My android learning plaground
 author: @realjema
 date: july-2020
@@ -117,3 +121,8 @@ onStop()
 onDestroyView()
 onDestroy()
 onDetach()
+
+We need to use **an interface** to decouple the fragment from the activity. We have two objects that need to talk to each other, the fragment and the activity and we want them to talkt without onse side knowing too much about the other.
+
+
+</details>

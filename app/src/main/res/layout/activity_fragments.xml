@@ -13,9 +13,8 @@
         android:layout_weight="2"
         android:layout_height="match_parent" />
 
-    <fragment
-        android:id="@+id/detail_frag"
-        class="com.example.playground.WorkoutDetailFragment"
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="0dp"
         android:layout_weight="3"
         android:layout_height="match_parent"/>
