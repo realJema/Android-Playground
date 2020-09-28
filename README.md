@@ -1,5 +1,98 @@
 # Android-Playground
 
+## Application Framework
+- Activity Manager
+Controls all aspects of teh application lifecycle and activity stack
+- Content Providers
+Allows applications to publish and share data with other applications
+- Resource Manager
+Provides access to non-code embedded resources such as strings color settings and user interface layouts
+- Notifications Manager
+Allows application s to display alerts and notifications to the user
+- View System
+An extensible set of views used to create application s user interfaces
+
+#### Activities
+Activity performs actions on the screen, it represents a single screen with a user interface.
+```
+public class MainActivity extends Activity {
+}
+```
+#### Services
+Component that runs on the background to perform long-running operations
+```
+public class MyService extends Service {
+}
+```
+#### Broadcast Receivers
+Respond to broadcast messages from other applications or from the system
+```
+public class MyReceiver extends BroadcastReceiver {
+    public void onReceive(context,intent){}
+}
+```
+#### Content Providers
+Supplies data from one application to others on request
+```
+public class MyContentProvider extends ContentProvider {
+    public void onCreate(){}
+}
+```
+#### Additional Components
+- Fragments
+Represent a portion of user interface in an Activity
+- Views
+UI elements that are drawn on-screen including buttons, lists, forms etc
+- Layouts
+View hierachies that control screen format and appearance of the views
+- Intents
+Messages wiring components together
+- Resources
+External elements such as strings, sonstants and drawable pictures
+- Manifest
+Configuration file for the application
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <details>
 <summary>Android Head First Book</summary>
 <br>
