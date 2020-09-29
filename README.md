@@ -80,14 +80,67 @@ format
 - implement queries
 - register content provider in your activity file using <provider> tag
 
+## Fragments
+A fragment has its own layout and its own behaviour with its own life cycle callbacks, you can add or remove them in an activity while the activity is running.
+You can combine multiple fragments in a single activity to build a multi-pane UI.
+#### Types
+- Single frame fragments
+- List fragments
+- Fragments transaction
 
+## Intents
+Abstract description of an operation to be performed. It can be used with;
+*startActivity*
+     launch an activity
+*broadcastIntent*
+    send it to any interested BroadcastReceiver components
+*startService(Intent) or bindService(Intent, ServiceConnection, int)*
+    communicate with a background service
 
+> The Intent itself, an intent object is a passive data structure holding an abstract description of an operation to be performed
 
+#### Intent Objects
+bundle of information which is used by the component that receives the intent as well as information used by the android stystem
+###### *Action*
+This is mandatory part of the intent and is a string naming the action to be performed
+set by the *setAction()*
+read by *getAction()*
 
+###### *Data*
+Adds a data specification to the intent
 
+###### *Category*
+optional part of intent object and its a string containing additional information about the kind of component that should handle the intent.
+*addCategory()*
+*removeCategory()*
 
+###### *Extras*
+This will be in key-value pairs for additional information that should be delivered to the component handling the intent.
 
+###### *Flags*
+optional parts of intent object and instruct the android system how to launch an activity and how to treat it after its launched
 
+### Types of Intent
+
+#### Explicit Intents
+Connect one activity to another activity, these intents designate the target component by its name and they are typically used for application internal messages eg. an activiyt starting a subordinate service or launching a sister activity.
+```
+// Explicit Intent by specifying its class name
+Intent i = new Intent(FirstActivity.this, SecondActivity.class);
+
+// Starts TargetActivity
+startActivity(i);
+```
+
+#### Implicit Intents
+used to activate components in other applications
+
+```
+Intent read1 = new Intent();
+read1.setAction(android.content.Intent.ACTION_VIEW);
+read1.setData(ContactsContract.Contacts.CONTENT_URI);
+startActivity(read1);
+```
 
 
 

@@ -20,7 +20,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tutorials point "
+            android:text="Jema  provider "
             android:textColor="#ff87ff09"
             android:textSize="30dp"
             android:layout_below="@+id/textView1"
@@ -48,16 +48,8 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
-            android:layout_below="@+id/imageButton"
-            android:layout_alignRight="@+id/imageButton"
-            android:layout_alignEnd="@+id/imageButton" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/editText2"
-            android:layout_alignTop="@+id/editText"
+            android:layout_alignTop="@+id/imageButton"
             android:layout_alignLeft="@+id/textView1"
             android:layout_alignStart="@+id/textView1"
             android:layout_alignRight="@+id/textView1"
@@ -70,10 +62,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/editText3"
             android:layout_below="@+id/editText"
-            android:layout_alignLeft="@+id/editText2"
-            android:layout_alignStart="@+id/editText2"
-            android:layout_alignRight="@+id/editText2"
-            android:layout_alignEnd="@+id/editText2"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_alignEnd="@+id/textView1"
             android:hint="Grade"
             android:textColorHint="@android:color/holo_blue_bright" />
 
@@ -89,3 +81,4 @@
             android:layout_alignStart="@+id/button2"
             android:onClick="onClickRetrieveStudents"/>
     </RelativeLayout>
+
