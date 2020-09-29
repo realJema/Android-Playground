@@ -52,9 +52,33 @@ External elements such as strings, sonstants and drawable pictures
 - Manifest
 Configuration file for the application
 
+## Content Providers
+supplies data from one application to other on request, a content provider can use different ways to store its data in a database, files or even a network.
+Content providers let you centralize content in one place and have many different applications access it as needed.
+#### Methods
+- insert()
+- update()
+- delete()
+- query()
+```
+public class MyApplication extends ContentProvider {
+}
+```
 
+#### Content URI's
+format
+`<prefix>://<authority>/<data_type>/<id>`
+*prefix*: This is always set to *content://*
+*authority*: specifies the name of the content provider ex: contacts, browser etc
+*data_type*: This indicates teh type fo data that this provider provides
+*id*: specifies the specific record requested
 
-
+#### Creating content provider
+- Create class which extends _ContentProviderbaseclass_
+- define URI
+- create db
+- implement queries
+- register content provider in your activity file using <provider> tag
 
 
 

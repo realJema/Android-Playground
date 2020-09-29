@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <provider
+            android:name=".StudentsProvider"
+            android:authorities="com.example.playground.StudentsProvider"
+            android:enabled="true"
+            android:exported="true" />
+
         <receiver
             android:name=".IntentReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.playground.CUSTOM_INTENT"></action>
+                <action android:name="com.example.playground.CUSTOM_INTENT" />
             </intent-filter>
         </receiver>
 
@@ -23,9 +30,10 @@
         <activity android:name=".Stopwatch" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Intents" />
+        <activity android:name=".BroadcastIntents" />
         <activity android:name=".ReceiveMessage" />
         <activity android:name=".spinner_button_display" />
-        <activity android:name=".BroadcastIntents">
+        <activity android:name=".ContentProviders">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
