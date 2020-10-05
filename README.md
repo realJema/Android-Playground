@@ -142,6 +142,56 @@ read1.setData(ContactsContract.Contacts.CONTENT_URI);
 startActivity(read1);
 ```
 
+## Layouts
+
+- Linear Layout
+- Relative Layout
+- Table Layout
+- Absolute Layout
+- Frame Layout
+- List View
+- Grid View
+
+### View
+A view is an object that draws something on the screen that the user can interact with and a **viewGroup** is an object that holds other Views(and ViewGroup) objects in order to define the layout of the user interface.
+
+### Events
+Evants are useful ways to collect data about a user's interaction with interactive components of an application.
+
+**Event Listeners**
+These methods will be called by the Android framework when the View to which the listener has been registerd is triggered by user interaction with the item in the UI
+**Event Listeners Registration**
+Process by which an Event Handler gets registered with an Event Listener so that the handler is called when the Event Listener fires the event
+**Event Handlers**
+When an event happens and we have registered the event listener for the event, the event listener calls the Event Handlers, which is the method that actually handles the event.
+
+#### Event Listeners & Event Handlers
+- onClick()
+- onLongClick()
+- onFocusChange()
+- onKey()
+- onTouch(): gestures
+- onMenuItemClick()
+- onCreateContextMenu(): This is called when the context menu is being built(as a result of a sustained long click)
+
+## Drag n Drop
+Android drap and drop framework allows your users to move data from one View to another View in the current layout using a graphical drag and drop gesture.
+#### Process
+**Started**
+When you start dragging an item in a layout, your application calls the _startDrag()_ method to tell the system to start a drag.
+arguments: data to be dragged, metadata for this data and a callback for drawing the drag shadow
+the system sends a drag event with the action type **ACTION_DRAP_STARTED** to the registered drag event listeners
+**Continuing**
+user continues the drag, system sends **ACTION_DRAG_ENTERED** action followed by **ACTION_DRAG_LOCATION** action. The drag event listener receives a **ACTION_DRAG_EXITED** action after the user has moved the drag shadow outside the bounding box of the View.
+**Dropped**
+user releases **ACTION_DROP**
+**Ended**
+just after the **ACTION_DROP** the system sends out a drag event with action type **ACTION_DRAG_ENDED** to indicate that the drag operation is over
+
+
+## Notifications
+a message you can display to the user outside of your application's normal UI
+
 
 
 

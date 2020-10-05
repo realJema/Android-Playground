@@ -26,15 +26,16 @@
         </receiver>
 
         <activity android:name=".Fragments" />
-        <activity android:name=".ContentProviders"/>
+        <activity android:name=".ContentProviders" />
         <activity android:name=".Layouts1" />
         <activity android:name=".Stopwatch" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Intents" />
         <activity android:name=".BroadcastIntents" />
         <activity android:name=".ReceiveMessage" />
+        <activity android:name=".Intents2"></activity>
         <activity android:name=".spinner_button_display" />
-        <activity android:name=".Intents2">
+        <activity android:name=".DragDrop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
