@@ -35,8 +35,9 @@
         <activity android:name=".ReceiveMessage" />
         <activity android:name=".Intents2" />
         <activity android:name=".spinner_button_display" />
-        <activity android:name=".DragDrop"></activity>
-        <activity android:name=".SMS">
+        <activity android:name=".DragDrop" />
+        <activity android:name=".SMS"/>
+        <activity android:name=".Alert">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
