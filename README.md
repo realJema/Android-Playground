@@ -192,7 +192,8 @@ just after the **ACTION_DROP** the system sends out a drag event with action typ
 ## Notifications
 a message you can display to the user outside of your application's normal UI
 
-
+## SMS
+SmsManager API or devices Built-in SMS application to send SMS's
 
 
 
