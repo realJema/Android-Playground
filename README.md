@@ -195,6 +195,8 @@ a message you can display to the user outside of your application's normal UI
 ## SMS
 SmsManager API or devices Built-in SMS application to send SMS's
 
+## Animations
+The process of crating motion and shape change
 
 
 

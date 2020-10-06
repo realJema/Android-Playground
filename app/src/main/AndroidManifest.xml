@@ -36,8 +36,9 @@
         <activity android:name=".Intents2" />
         <activity android:name=".spinner_button_display" />
         <activity android:name=".DragDrop" />
-        <activity android:name=".SMS"/>
-        <activity android:name=".Alert">
+        <activity android:name=".SMS" />
+        <activity android:name=".Alert"/>
+        <activity android:name=".Animation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
